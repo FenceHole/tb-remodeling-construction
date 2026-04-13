@@ -1,0 +1,14 @@
+packages:
+  "framer-motion": "For page transitions, scroll-triggered animations, and stat counters"
+  "react-helmet-async": "For SEO management and structured data"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes without style conflicts"
+  "@hookform/resolvers": "Zod validation with react-hook-form"
+  "react-hook-form": "Form state management"
+  "zod": "Schema validation for forms"
+  "lucide-react": "Icons"
+
+notes:
+  - This is a pure frontend Single Page App, so no backend routes are called.
+  - Using native CSS scroll-behavior: smooth for internal anchor links.
+  - The form uses react-hook-form and Zod but only simulates a submission since no backend is required.
