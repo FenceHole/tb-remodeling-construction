@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.tandbconstruction.com/sitemap.xml
+
+# Allow all image bots to index the gallery
+User-agent: Googlebot-Image
+Allow: /gallery/
+Allow: /opengraph.jpg
+Allow: /tb-logo-circle.png
