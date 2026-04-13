@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "T&B Remodeling & Construction"
+version = "1.0.0"
+id = "artifacts/tb-remodeling"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22156
+
+[services.development]
+run = "pnpm --filter @workspace/tb-remodeling run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/tb-remodeling", "run", "build" ]
+publicDir = "artifacts/tb-remodeling/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22156"
+BASE_PATH = "/"
